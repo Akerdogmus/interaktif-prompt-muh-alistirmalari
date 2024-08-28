@@ -40,10 +40,10 @@ Her bölüm bir ders ve bir dizi alıştırmadan oluşmaktadır.
 
 - **Bölüm 6:** [Öngörü (Adım Adım Düşünme)](https://github.com/Akerdogmus/interaktif-prompt-muh-alistirmalari/blob/main/06_Ongoru_Ad%C4%B1m_Ad%C4%B1m_Dusunmek.ipynb)
 
-- **Bölüm 7:** Örnekleri Kullanma (**HAZIRLANIYOR**)
+- **Bölüm 7:** [Örnekleri Kullanma](https://github.com/Akerdogmus/interaktif-prompt-muh-alistirmalari/blob/main/07_Ornekleri_Kullanma_Few_Shot_Prompting.ipynb)
 
 ### Gelişmiş
-- **Bölüm 8:** Halüsinasyonlardan Kaçınma (**HAZIRLANIYOR**)
+- **Bölüm 8:** [Halüsinasyonlardan Kaçınma](https://github.com/Akerdogmus/interaktif-prompt-muh-alistirmalari/blob/main/08_Halusinasyonlardan_Kacinmak.ipynb)
 
 - **Bölüm 9:** Karmaşık İstemler Oluşturma (Sektörel Kullanım Örnekleri) (**HAZIRLANIYOR**)
 
