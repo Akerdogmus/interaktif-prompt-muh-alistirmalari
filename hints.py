@@ -64,3 +64,42 @@ ASSISTANT TURN
 
 exercise_6_2_hint = """Bu alıştırmadaki not verme işlevi, yalnızca “<answer>B<answer>” gibi <answer> etiketlerine sarılmış doğru harfi aramaktadır. Doğru kategorizasyon harfleri yukarıdaki alıştırmadakilerle aynıdır.
 Bazen bunu yapmanın en basit yolu Gemini'a çıktısının nasıl görünmesini istediğinize dair bir örnek vermektir. Örneğinizi <example><example> etiketleri içine sarmayı unutmayın! Ve Gemini'ın yanıtını herhangi bir şeyle önceden doldurursanız, Gemini'ın bunu yanıtının bir parçası olarak gerçekten çıktılamayacağını unutmayın."""
+
+exercise_7_1_hint = """Bazı örnek e-postalar yazmanız ve bunları Gemini için sınıflandırmanız gerekecek (tam olarak istediğiniz biçimlendirme ile). Bunu yapmanın birden fazla yolu var. Aşağıda bazı yönergeler verilmiştir.										
+1.	En az iki örnek e-postaya sahip olmaya çalışın. Gemini'un tüm kategoriler için bir örneğe ihtiyacı yoktur ve örneklerin uzun olması gerekmez. Daha zor olduğunu düşündüğünüz kategoriler için örneklere sahip olmak daha yararlıdır (Bölüm 6 Alıştırma 1'in altında düşünmeniz istenmişti). XML etiketleri, gereksiz olsa da örneklerinizi isteminizin geri kalanından ayırmanıza yardımcı olacaktır.									
+2.	Örnek yanıt biçimlendirmenizin tam olarak Gemini'un kullanmasını istediğiniz biçim olduğundan emin olun, böylece Gemini da bu biçimi taklit edebilir. Bu format, Gemini'un cevabının kategorinin harfiyle bitmesini sağlamalıdır. E-posta} yer tutucusunu nereye koyarsanız koyun, tam olarak örnek e-postalarınız gibi biçimlendirildiğinden emin olun.									
+3.	Sorunun içinde kategorilerin hala listelendiğinden emin olun, aksi takdirde Gemini hangi kategorilere başvuracağını ve {email}'i değiştirme için bir yer tutucu olarak bilemeyecektir."""
+
+exercise_7_1_solution = """
+USER TURN
+Please classify emails into the following categories, and do not include explanations: 
+<categories>
+(A) Pre-sale question
+(B) Broken or defective item
+(C) Billing question
+(D) Other (please explain)
+</categories>
+
+Here are a few examples of correct answer formatting:
+<examples>
+Q: How much does it cost to buy a Mixmaster4000?
+A: The correct category is: A
+
+Q: My Mixmaster won't turn on.
+A: The correct category is: B
+
+Q: Please remove me from your mailing list.
+A: The correct category is: D
+</examples>
+
+Here is the email for you to categorize: {email}
+
+ASSISTANT TURN
+The correct category is:
+"""
+exercise_8_1_hint = """Bu alıştırmadaki derecelendirme işlevi, “bilmiyorum”, “bir fikrim yok” veya “maalesef” ifadesini içeren bir yanıt aramaktadır.
+Gemini cevabı bilmiyorsa ne yapmalıdır?"""
+
+exercise_8_2_hint = """Bu alıştırmadaki puanlama işlevi “49 kat” ifadesini içeren bir yanıt aramaktadır.
+İlgili alıntıları yaparak ve alıntıların yeterli kanıt sağlayıp sağlamadığını görerek Gemini'nin önce çalışmasını ve düşünce sürecini göstermesini sağlayın. Tazelemek isterseniz Bölüm 8 Dersine geri dönün."""
+
